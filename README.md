@@ -50,7 +50,7 @@ The project follows the three-layered **Medallion Architecture**.
   - Successful approach: `t3.xlarge` Spot Instance (16 GB RAM, cost-efficient).  
 
 ### Phase 2: Environment Setup & Troubleshooting
-- **Docker Container:** `bitnami/spark:3.5.2` image.  
+- **Docker Container:** `jupyter/pyspark-notebook/spark:3.5.2` image.  
 - **Jupyter Installation Journey:**  
   - Virtual environment attempt failed (dependency conflicts).  
   - Stable solution: Install Jupyter & dependencies directly into container's root environment.  
