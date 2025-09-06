@@ -1,7 +1,5 @@
 # Cloud-Native Data Lake on AWS: A Medallion Architecture Project
 
-**Project Status:** Completed
-
 ---
 
 ## 1. Project Aim & Executive Summary
@@ -20,8 +18,8 @@ This document serves as a comprehensive log of the entire project lifecycle, fro
 | Technology       | Implementation                | Rationale for Selection |
 |------------------|-------------------------------|--------------------------|
 | **Cloud Provider** | Amazon Web Services (AWS)     | Mature, comprehensive, and reliable suite of services for data processing, storage, and networking. |
-| **Storage**       | Amazon S3                     | Virtually infinite, highly durable (99.999999999%), and cost-effective object storage. |
-| **Compute**       | EC2 Spot Instance (t3.xlarge) | High-memory (16 GB) and CPU (4 vCPUs) at ~80% discount vs On-Demand. |
+| **Storage**       | Amazon S3                     | Virtually infinite, highly durable, and cost-effective object storage. |
+| **Compute**       | EC2 Spot Instance (t3.xlarge) | High-memory (16 GB) and CPU (4 vCPUs) at ~ 50% to 80% discount vs On-Demand. |
 | **Processing Engine** | Apache Spark 3.5.2         | Leading distributed data processing engine; in-memory computation suited for 10M records. |
 | **Table Format**  | Delta Lake                    | Provides ACID transactions, schema enforcement, time travel, and reliability. |
 | **Containerisation** | Docker                     | Lightweight, reproducible environments for Spark and Jupyter. |
@@ -81,7 +79,7 @@ The project follows the three-layered **Medallion Architecture**.
 ### Networking & Security Features
 - **Security Groups:** Restricted inbound traffic (SSH only).  
 - **IP Change Hack:** Manual update for changing local IP.  
-- **SSH Tunnelling:** Local port forwarding (9999 → 8889) to securely access Jupyter.  
+- **SSH Tunnelling:** Local port forwarding (8888 → 8888) to securely access Jupyter.  
 
 ---
 
@@ -92,4 +90,4 @@ This project demonstrates the **power and flexibility of AWS** for modern data p
 - Reliability of Delta Lake  
 - Reproducibility of Docker  
 
-We built a **secure, robust, and economically viable end-to-end data lake** that successfully handled 10 million transactional records in a production-ready Medallion Architecture.  
+We built a **secure, robust, and economically viable end-to-end data lake** that successfully handled 1 million transactional records in a production-ready Medallion Architecture.  
