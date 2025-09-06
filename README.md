@@ -19,7 +19,7 @@ This document serves as a comprehensive log of the entire project lifecycle, fro
 |------------------|-------------------------------|--------------------------|
 | **Cloud Provider** | Amazon Web Services (AWS)     | Mature, comprehensive, and reliable suite of services for data processing, storage, and networking. |
 | **Storage**       | Amazon S3                     | Virtually infinite, highly durable, and cost-effective object storage. |
-| **Compute**       | EC2 Spot Instance (t3.xlarge) | High-memory (16 GB) and CPU (4 vCPUs) at ~ 50% to 80% discount vs On-Demand. |
+| **Compute**       | EC2 Spot Instance (t3.xlarge) | High-memory (16 GB) and CPU (4 vCPUs) at ~80% discount vs On-Demand. |
 | **Processing Engine** | Apache Spark 3.5.2         | Leading distributed data processing engine; in-memory computation suited for 10M records. |
 | **Table Format**  | Delta Lake                    | Provides ACID transactions, schema enforcement, time travel, and reliability. |
 | **Containerisation** | Docker                     | Lightweight, reproducible environments for Spark and Jupyter. |
