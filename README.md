@@ -1,0 +1,1 @@
+# AWS-Scratch-Basic-Datalake
