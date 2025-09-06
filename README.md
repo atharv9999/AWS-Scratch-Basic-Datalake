@@ -3,7 +3,7 @@
 ---
 
 ## 1. Project Aim & Executive Summary
-The primary objective of this Cloud Computing project was to design, build, and deploy a scalable, cost-effective, and robust data lake on Amazon Web Services (AWS). The project implements the modern Medallion Architecture to process a large dataset of **10 million transactional records**, transforming them from raw CSV files into aggregated, query-ready business insights.
+The primary objective of this Cloud Computing project was to design, build, and deploy a scalable, cost-effective, and robust data lake on Amazon Web Services (AWS). The project implements the modern Medallion Architecture to process a dataset of **1 million transactional records**, transforming them from raw CSV files into aggregated, query-ready business insights.
 
 This document serves as a comprehensive log of the entire project lifecycle, from the initial architectural design and infrastructure setup to the iterative process of troubleshooting, development, and final analysis. A key focus was to move beyond basic implementation and leverage cloud-native features for:
 - Cost optimisation (EC2 Spot Instances)
@@ -20,7 +20,7 @@ This document serves as a comprehensive log of the entire project lifecycle, fro
 | **Cloud Provider** | Amazon Web Services (AWS)     | Mature, comprehensive, and reliable suite of services for data processing, storage, and networking. |
 | **Storage**       | Amazon S3                     | Virtually infinite, highly durable, and cost-effective object storage. |
 | **Compute**       | EC2 Spot Instance (t3.xlarge) | High-memory (16 GB) and CPU (4 vCPUs) at ~80% discount vs On-Demand. |
-| **Processing Engine** | Apache Spark 3.5.2         | Leading distributed data processing engine; in-memory computation suited for 10M records. |
+| **Processing Engine** | Apache Spark 3.5.2         | Leading distributed data processing engine; in-memory computation suited for 1M records. |
 | **Table Format**  | Delta Lake                    | Provides ACID transactions, schema enforcement, time travel, and reliability. |
 | **Containerisation** | Docker                     | Lightweight, reproducible environments for Spark and Jupyter. |
 | **Development**   | Jupyter Notebook              | Interactive environment for developing, testing, and documenting PySpark ETL scripts. |
